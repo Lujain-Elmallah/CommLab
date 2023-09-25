@@ -59,29 +59,3 @@ function typewriterEffect() {
   
   // Add a scroll event listener to trigger the typewriter effect
   window.addEventListener('scroll', handleScroll);
-
-// Get references to the cursor images
-const normalCursor = 'url("IMG/cursor_normal.png"), auto';
-const clickedCursor = 'url("IMG/cursor_clicked.png"), auto';
-
-// Variable to track the cursor state
-let isCursorClicked = false;
-
-// Function to change cursor
-function changeCursor() {
-    if (isCursorClicked) {
-        document.body.style.cursor = normalCursor;
-    } else {
-        document.body.style.cursor = clickedCursor;
-    }
-}
-
-// Add a click event listener to toggle the cursor state
-document.addEventListener('click', () => {
-    isCursorClicked = !isCursorClicked;
-    changeCursor();
-});
-
-// Set the initial cursor
-changeCursor();
-  
