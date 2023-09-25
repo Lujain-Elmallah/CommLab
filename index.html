@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> This is my page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-
-<ul>
-    <li><a href="default.asp">Home</a></li>
-    <li><a href="film.asp">Film</a></li>
-    <li><a href="story.asp">Story</a></li>
-  </ul>
-
-<link rel="stylesheet" href="styles.css">
-<script src="script.js"></script>
-
-<h1> The Pursuit</h1>
-
-<video width="400" height="240" controls autoplay muted>
-    <source src="img/video.mp4" type="video/mp4">
-</video> 
-</div>
-<h1> The Story</h1>
 <body>
-    <div class="container">
-      <div class="image">
-        <img src="IMG/image.jpg">
-      </div>
-      <div class="text">
-        <h1>An insight into the lives of the New York University Abu Dhabi students as they flood into the library
-            everyday in pursuit of knowledge. They know no limit to this journey, they will spend all day and night
-            in any space that will provide them with the information they seek.</h1>
-      </div>
+    <header>
+        <a href="#" class="logo"><img width="65" src="IMG/logo.png"></a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#vid">Film</a></li>
+            <li><a href="#sec">Story</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="IMG/myImage.jpg" id="background">
+        <h2 id="text">The Pursuit</h2>
+        <a href="#vid" id="btn">Watch Film</a>
+        <img src="IMG/frontImage.png" id="front">
+    </section>
+    <center>
+        <div class="vid" id="vid">
+            <h2>WELCOME TO THE PURSUIT!</h2>
+            <video width="700" controls autoplay muted>
+                <source src="img/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </center>
+    <div class="sec" id="sec">
+        <div class="title" id="parent">
+            <span id="typewriter">Behind and Beyond the Film</span>
+            <div id="border"></div>
+        </div>
+        <img src="IMG/img1.jpg" id="img1">
+        <div class="first" id="first">
+            <p>An insight into the lives of the New York University Abu Dhabi students as they flood into the library
+                everyday in pursuit of knowledge. They know no limit to this journey, they will spend all day and night
+                in any space that will provide them with the information they seek.<br><br> The film highlights this environment
+                that encourages students to work hard and pursue their unwavering goals without any distractions. The music accompyning the film 
+                portrays the intensity of this journey as it is wihtout a doubt not an easy one. </p>
+        </div>
+        <img src="IMG/img2.jpg" id="img2">
+        <div class="second" id="second">
+            <p>The main character of the film is a bioengineering student in NYU Abu Dhabi where the film takes place and she is one those dedicated
+                students in pursuit of knowledge. The film follows her through one of her studying sessions where she studies and researches concepts
+                throughout the film. <br><br>The film not only hopes to capture the journey of such students but inspire others to follow in their
+                footsteps and work towards achieving their goals and pursuing education. In a way it is a motivational film that hopes to evoke the 
+                feeling of hope within students.</p>
+        </div>
     </div>
-  </body>
-</body>
+    <footer class="footer">
+        <div class="footer-buttons">
+          <button id="email-button">
+            <a href="mailto:le2205@nyu.edu">
+              <img src="IMG/email.png" alt="Email Icon" class="email-icon">
+              Email
+            </a>
+          </button>
+          <button id="scroll-to-top">
+            <a href="#">
+                <img src="IMG/up.png" alt="Top Icon" class="top-icon">
+                Back to Top
+            </a>
 
+        </button>
+        </div>
+      </footer>
+</body>
 </html>
