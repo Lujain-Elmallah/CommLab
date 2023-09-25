@@ -61,8 +61,8 @@ function typewriterEffect() {
   window.addEventListener('scroll', handleScroll);
 
 // Get references to the cursor images
-const normalCursor = 'url("img/cursor_normal.png"), auto';
-const clickedCursor = 'url("img/cursor_clicked.png"), auto';
+const normalCursor = 'url("IMG/cursor_normal.png"), auto';
+const clickedCursor = 'url("IMG/cursor_clicked.png"), auto';
 
 // Variable to track the cursor state
 let isCursorClicked = false;
